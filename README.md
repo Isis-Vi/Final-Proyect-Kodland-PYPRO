@@ -1,5 +1,5 @@
-# 🌍 Análisis de Datos:
-Este proyecto consiste en un BOT de Discord capaz de calcular la huella de carbono del usuario,mediante preguntas específicas sobre su alimentación, transporte y consumo de plásticos.  ofrece recomendaciones para mejorar su impacto ambiental y estima cuántos árboles serían necesarios para compensar su daño al planeta.
+# ♣️ Huella_T:
+Este proyecto consiste en un BOT de Discord capaz de calcular la huella de carbono del usuario,mediante preguntas específicas sobre su alimentación, transporte y consumo de plásticos. Ofrece recomendaciones para mejorar su impacto ambiental y estima cuántos árboles serían necesarios para compensar su daño al planeta.
 
 ## 🌱 Funcionalidades clave:
 - /help - Permite ver todos los comandos funcionales.
