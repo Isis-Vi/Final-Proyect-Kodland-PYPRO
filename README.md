@@ -1,4 +1,4 @@
-# ♣️ Huella_T:
+# ♣️ Eco_Bippo:
 Este proyecto consiste en un BOT de Discord capaz de calcular la huella de carbono del usuario,mediante preguntas específicas sobre su alimentación, transporte y consumo de plásticos. Ofrece recomendaciones para mejorar su impacto ambiental y estima cuántos árboles serían necesarios para compensar su daño al planeta.
 
 ## 🌱 Funcionalidades clave:
