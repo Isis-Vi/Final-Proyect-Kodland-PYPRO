@@ -5,8 +5,7 @@ from sqlalchemy.orm import sessionmaker
 engine = create_engine('sqlite:///carbon_footprint.db', echo=True)
 Base = declarative_base()
 
-# Crear la tabla de la base de datos
-
+#Crear la tabla de la base de datos
 class CarbonFootPrint(Base):
     __tablename__ = 'carbon_footprint'
 

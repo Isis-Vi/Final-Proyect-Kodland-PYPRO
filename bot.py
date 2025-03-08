@@ -26,10 +26,10 @@ async def huella_estimado(ctx):
     def check(m):
         return m.author == ctx.author and m.channel == ctx.channel
     
-    await ctx.send("¿Cuántos kilometros, en promedio viajas en carro al mes?")
+    await ctx.send("¿Cuántos kilometros, en promedio, viajas en vehículos motorizados al mes?")
     km_carro = await bot.wait_for("message", check=check)
     
-    await ctx.send("¿Cuántos kWh de electricidad consumes al mes?")
+    await ctx.send("¿Cuántos kWh de electricidad consumes al mes en tu hogar?")
     kwh = await bot.wait_for("message", check=check)
     
     await ctx.send("¿Consumes carne frecuentemente? (sí/no)")
@@ -78,7 +78,7 @@ async def huella_registrada(ctx):
 #Show available commands
 @bot.command()
 async def ayuda(ctx):
-    commands = "**ᕙ( •̀ ᗜ •́ )ᕗ Los comandos disponibles que puedes usar conmigo son:** \n /ayuda \n /huella_estimado \n /current_foot_print \n carbono_comp \n /consejo "
+    commands = "**ᕙ( •̀ ᗜ •́ )ᕗ Los comandos disponibles que puedes usar conmigo son:** \n /ayuda \n /huella_estimado \n /huella_regristada \n carbono_comp \n /consejo \n ¡Pruebalos todos ദ്ദി(˵ •̀ ᴗ - ˵ ) "
     await ctx.send(commands)
 
 #Estimate trees to compensate the carbon footprint
@@ -95,7 +95,7 @@ async def carbono_comp(ctx):
     arboles_necesarios = huella_anual / 22
 
     await ctx.send(f"🌱 Para compensar tu huella de carbono anual de **{huella_anual:.2f} kg CO₂**, "
-                   f"necesitarías plantar aproximadamente **{arboles_necesarios:.2f} árboles** (˵ •̀ ᴗ - ˵ ) ✧")
+                   f"necesitarías plantar aproximadamente **{arboles_necesarios:.2f} árboles** ( ◡̀_◡́)ᕤ")
 
 #Advice on how to decrease carbon footprint command
 @bot.command()
@@ -112,7 +112,7 @@ async def consejo(ctx):
 
     # Evaluar cada aspecto individualmente
     if carro_usuario > 1000:
-        consejos.append(f"🚗 **Transporte:** Tu uso del vehículo es más alto de lo ideal, con un total de **{carro_usuario} km/mes**. ٩(^ᗜ^ )و - Reduce tu impacto:\n"
+        consejos.append(f"🚗 **Transporte:** Tu uso del vehículo es más alto de lo ideal, con un total de **{carro_usuario} km/mes**. ( ꩜ ᯅ ꩜;)⁭و - Reduce tu impacto:\n"
                         f"- Usa bicicleta o transporte público \n"
                         f"- Camina más en trayectos cortos \n"
                         )
@@ -139,4 +139,4 @@ async def consejo(ctx):
     else:
         await ctx.send("(૭ ｡•̀ ᵕ •́｡ )૭ ¡Felicidades! Tu huella de carbono está dentro de los niveles recomendados. 🌎♻️")
 
-bot.run("INGRESE EL TOKEN DE SU BOT AQUÍ")
+bot.run("INGRESE AQUÍ EL TOKEN DE SU BOT")
