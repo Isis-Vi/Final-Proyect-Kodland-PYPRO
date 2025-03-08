@@ -78,7 +78,7 @@ async def huella_registrada(ctx):
 #Show available commands
 @bot.command()
 async def ayuda(ctx):
-    commands = "**ᕙ( •̀ ᗜ •́ )ᕗ Los comandos disponibles que puedes usar conmigo son:** \n /ayuda \n /huella_estimado \n /huella_regristada \n carbono_comp \n /consejo \n ¡Pruebalos todos ദ്ദി(˵ •̀ ᴗ - ˵ ) "
+    commands = "**ᕙ( •̀ ᗜ •́ )ᕗ Los comandos disponibles que puedes usar conmigo son:** \n /ayuda \n /huella_estimado \n /huella_regristada \n carbono_comp \n /consejo \n ¡Pruebalos todos ദ്ദി(˵ •̀ ᴗ - ˵ )! "
     await ctx.send(commands)
 
 #Estimate trees to compensate the carbon footprint
@@ -130,13 +130,11 @@ async def consejo(ctx):
 
     # Si hay consejos, enviarlos uno por uno
     if consejos:
-        if huella_usuario:
-            for consejo in consejos:
-                await ctx.send(consejo)
-        else:
-            await ctx.send(f'૮(˶╥︿╥)ა Aun no tienes registrada tu huella de carbono, debes proporcionar tu huella de carbono usando el comando:\n /carbono_comp')
-    
-    else:
-        await ctx.send("(૭ ｡•̀ ᵕ •́｡ )૭ ¡Felicidades! Tu huella de carbono está dentro de los niveles recomendados. 🌎♻️")
+        for consejo in consejos:
+            await ctx.send(consejo)
 
-bot.run("INGRESE AQUÍ EL TOKEN DE SU BOT")
+    else:
+        await ctx.send(f'૮(˶╥︿╥)ა Aun no tienes registrada tu huella de carbono, debes proporcionar tu huella de carbono usando el comando:\n /carbono_comp')
+
+
+bot.run("TU TOKEN VA AQUI")
